@@ -4,7 +4,7 @@ SSMTP mailer in Docker container
 
 **Usage example:**
 
-docker run -i \
+cat message.txt | docker run -i \
   -e SMTP_HOST=smtp.example.tld:587 \
   -e SMTP_USER=SMTPUSER \
   -e SMTP_PASS=SMTPPASSWORD \
