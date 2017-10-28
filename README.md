@@ -30,3 +30,18 @@ docker run -i \
   -e MESSAGE="This is the message" \
   --rm itsziget/ssmtp-mailer
 ```
+
+There are some security options turned on by default:
+
+- TLS=YES
+- STARTTLS=YES
+
+You can turn them off when you need:
+
+```bash
+docker run -i \
+  ...
+  -e TLS=NO \
+  -e STARTTLS=NO \
+  ...
+```
