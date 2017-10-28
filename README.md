@@ -15,3 +15,18 @@ cat message.txt | docker run -i \
   -e SUBJECT="Subject" \
   --rm itsziget/ssmtp-mailer
 ```
+
+or store the message  in a variable:
+
+```bash
+docker run -i \
+  -e SMTP_HOST=smtp.example.tld:587 \
+  -e SMTP_USER=SMTPUSER \
+  -e SMTP_PASS=SMTPPASSWORD \
+  -e TO="recieveraddress@example.tld" \
+  -e FROM_EMAIL="senderaddress@example.tld" \
+  -e FROM_NAME="Your Name" \
+  -e SUBJECT="Subject" \
+  -e MESSAGE="This is the message" \
+  --rm itsziget/ssmtp-mailer
+```
