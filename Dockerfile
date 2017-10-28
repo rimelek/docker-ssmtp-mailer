@@ -9,4 +9,4 @@ RUN chmod +x /mailer.sh
 
 ENTRYPOINT []
 
-CMD ["/bin/sh", "-c", "/mailer.sh"]
+CMD ["/mailer.sh"]
